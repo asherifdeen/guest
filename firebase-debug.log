@@ -1,0 +1,62 @@
+[debug] [2018-08-12T17:42:33.625Z] ----------------------------------------------------------------------
+[debug] [2018-08-12T17:42:33.625Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\BlakCoder\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2018-08-12T17:42:33.625Z] CLI Version:   4.0.3
+[debug] [2018-08-12T17:42:33.625Z] Platform:      win32
+[debug] [2018-08-12T17:42:33.625Z] Node Version:  v8.9.4
+[debug] [2018-08-12T17:42:33.625Z] Time:          Sun Aug 12 2018 17:42:33 GMT+0000 (Coordinated Universal Time)
+[debug] [2018-08-12T17:42:33.625Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-12T17:42:33.640Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-08-12T17:42:33.640Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Vue Learn\my-guestbook
+
+[debug] [2018-08-12T17:43:29.197Z] ----------------------------------------------------------------------
+[debug] [2018-08-12T17:43:29.197Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\BlakCoder\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2018-08-12T17:43:29.197Z] CLI Version:   4.0.3
+[debug] [2018-08-12T17:43:29.197Z] Platform:      win32
+[debug] [2018-08-12T17:43:29.197Z] Node Version:  v8.9.4
+[debug] [2018-08-12T17:43:29.197Z] Time:          Sun Aug 12 2018 17:43:29 GMT+0000 (Coordinated Universal Time)
+[debug] [2018-08-12T17:43:29.197Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-12T17:43:29.212Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-08-12T17:43:29.212Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Vue Learn\my-guestbook
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-08-12T17:43:52.604Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-08-12T17:43:52.604Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/W1oJPZ7HjfTC0MSVG8xGzfex7Jo_NqZ9g_w608VJP9g',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Aug 12 2018 17:43:52 GMT+0000 (Coordinated Universal Time)
+[debug] [2018-08-12T17:43:53.432Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-12T17:43:53.542Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Sun Aug 12 2018 17:43:53 GMT+0000 (Coordinated Universal Time)
+[debug] [2018-08-12T17:43:55.292Z] <<< HTTP RESPONSE 200
