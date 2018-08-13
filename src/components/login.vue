@@ -23,7 +23,8 @@
                           label="Password"
                            v-model="user.password" 
                            type="password" 
-                           :rules="[rules.required, rules.min]"></v-text-field>
+                           :rules="[rules.required, rules.min]"
+                           @keyup.enter="login"></v-text-field>
                         </v-form>
                       </v-card-text>
                       <v-card-actions>
@@ -61,10 +62,11 @@ export default {
   methods:{
     
       login (e){
-         if (this.$refs.form.validate()){
+
+          if (this.$refs.form.validate()){
          firebase.auth().signInWithEmailAndPassword(this.user.email, this.user.password)
         .then(user =>{
-            this.$emit('loginStatus', true);
+            //this.$emit('loginStatus', true);
             //this.$router.push('/');//re-rendering th path
             this.$router.go({path: this.$router.path});
         }),
@@ -81,7 +83,3 @@ export default {
 }
 </script>
 
-
-<style>
-
-</style>

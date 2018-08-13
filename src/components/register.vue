@@ -29,7 +29,8 @@
                           name="cpassword" 
                           label="Confirm Password"
                           type="password" 
-                          :rules="passwordConfirmationRules"></v-text-field>
+                          :rules="passwordConfirmationRules"
+                          @keyup.enter="register"></v-text-field>
                         </v-form>
                       </v-card-text>
                       <v-card-actions>

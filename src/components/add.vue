@@ -106,7 +106,7 @@ data() {
                 this.newGuest.lat = '';
                 this.newGuest.long = '';
                 console.log(ref);
-                this.$router.push('dashboard');
+                this.$router.go({path: this.$router.path});
               }).catch(err => {
                   console.log(err);
               })
