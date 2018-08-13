@@ -65,7 +65,9 @@ export default {
           if (this.$refs.form.validate()){
          firebase.auth().signInWithEmailAndPassword(this.user.email, this.user.password)
         .then(user =>{
-            this.$router.push('dashboard');
+            this.$emit('loginStatus', true);
+            //this.$router.push('/');//re-rendering th path
+            this.$router.go({path: this.$router.path});
         }),
         err => {
             alert(err.message);

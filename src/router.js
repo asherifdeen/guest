@@ -16,20 +16,26 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'login',
-      component: Login,
+      name: 'dashboard',
+      component: Main,
+      meta: {
+        requiresAuth: true,
+      },
     },
     {
       path: '/register',
       name: 'register',
       component: Register,
+      meta: {
+        requiresGuest: true,
+      },
     },
     {
-      path: '/dashboard',
-      name: 'dashboard',
-      component: Main,
+      path: '/login',
+      name: 'login',
+      component: Login,
       meta: {
-        requiresAuth: true,
+        requiresGuest: true,
       },
     },
     {
@@ -55,7 +61,7 @@ router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth)) {
     if (!firebase.auth().currentUser) {
       next({
-        path: '/',
+        path: '/login',
         query: {
           redirect: to.fullPath,
         },
@@ -66,7 +72,7 @@ router.beforeEach((to, from, next) => {
   } else if (to.matched.some(record => record.meta.requiresGuest)) {
     if (firebase.auth().currentUser) {
       next({
-        path: '/dashboard',
+        path: '/',
         query: {
           redirect: to.fullPath,
         },
