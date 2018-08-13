@@ -1,18 +1,18 @@
 <template>
     <v-app>
-      <v-toolbar dark color="cyan darken-1">
+      <v-toolbar dark color="cyan darken-1" v-show="isLoggedIn">
         <v-toolbar-side-icon></v-toolbar-side-icon>
         <v-toolbar-title class="white--text">{{title}}</v-toolbar-title>
         <v-spacer></v-spacer>
-        <v-btn to="/dashboard" outline v-show="isLoggedIn">
+        <v-btn to="/dashboard" outline>
         <v-icon>person_add</v-icon>
           Dashboard
         </v-btn>
-        <v-btn to="/add" outline v-show="isLoggedIn">
+        <v-btn to="/add" outline>
         <v-icon>person_add</v-icon>
           Add Guest
         </v-btn>
-        <v-btn flat @click="logout" v-show="isLoggedIn">
+        <v-btn flat @click="logout">
           <v-icon>exit_to_app</v-icon>
         </v-btn>
       </v-toolbar>
@@ -37,7 +37,7 @@ export default {
     return{
        title: "BlakCoder's Guestbook",
        isLoggedIn: false,
-       currentUser: false, 
+       currentUser: '', 
     }
   },
     methods: {
