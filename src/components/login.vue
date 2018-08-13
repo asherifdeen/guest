@@ -61,8 +61,7 @@ export default {
   methods:{
     
       login (e){
-
-          if (this.$refs.form.validate()){
+         if (this.$refs.form.validate()){
          firebase.auth().signInWithEmailAndPassword(this.user.email, this.user.password)
         .then(user =>{
             this.$emit('loginStatus', true);
